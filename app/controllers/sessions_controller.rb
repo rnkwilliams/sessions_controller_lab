@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   
   def create
     session[:name] = params[:name]
-      if session[:name].empty?
+      if session[:name] == nil
         redirect_to 'new'
       else
         redirect_to '/'
