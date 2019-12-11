@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       if User.name == nil
         redirect_to "login"
       else
-      redirect_to '/'
+        redirect_to '/'
     end
   end
 
